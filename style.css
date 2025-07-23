@@ -1,84 +1,46 @@
-
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background: #004d00;
-  color: #fff;
-  padding: 20px;
+.intro-page {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  background: #f4f4f4;
+  cursor: pointer;
+  text-align: center;
 }
 
-.logo img {
-  height: 60px;
+.scroll-logo {
+  width: 200px;
+  animation: scroll 5s linear infinite;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
+@keyframes scroll {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
-nav ul li a {
+nav {
+  background-color: #1b5e20;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
   color: #fff;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-main {
-  padding: 30px;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
-h1, h2 {
-  color: #2e7d32;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-}
-
-form label {
-  margin: 10px 0 5px;
-}
-
-form input, form select, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  margin-top: 20px;
-  padding: 10px;
-  background: #2e7d32;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-form button:hover {
-  background: #1b5e20;
-}
-
 footer {
-  background: #004d00;
-  color: #fff;
+  background-color: #1b5e20;
+  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
